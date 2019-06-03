@@ -1,29 +1,51 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+          <router-link to="/">logo</router-link> 
+          <router-link to="/about">about</router-link>
+          <router-link to="/chat">chat</router-link>
     </div>
-    <router-view/>
+    <div id="content">
+      <router-view/>
+    </div>
+    <div id="footer">
+      <footer>footer</footer>
+    
+    </div>
   </div>
 </template>
+<script>
+
+</script>
+
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+*{
+  padding:0 ;
+  margin: 0;
+}
+#app{
+  width: 100%;
+  height: 80px;
+  background-color:green;
+  text-align:center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#footer{
+  height: 50px;
+  line-height: 50px;
+  background-color: #8b8b8b;
 }
+#content{
+  background-color: #b9e2d0;
+  height:600px;
+}
+#nav{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
 </style>
